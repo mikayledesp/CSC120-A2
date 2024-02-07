@@ -1,3 +1,4 @@
+from oo_resale_shop import *
 class Computer:
 
     # What attributes will it need?
@@ -25,3 +26,4 @@ print("-" * 21)
 print("Buying", computer.description,computer.processor_type,computer.hard_drive_capacity, computer.memory,computer.operating_system, computer.year_made, computer.price )
 print("Adding to Inventory...")
 print("Done.")
+print ("Checking Inventory......")

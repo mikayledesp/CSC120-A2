@@ -1,30 +1,24 @@
-import computer
+from computer import *
 from typing import Dict, Optional
-inventory : Dict[int, Dict] = {}
-itemID = 0
 
 class ResaleShop:
     # What attributes will it need?
-    computer.price: int 
+    inventory = []
     
     # How will you set up your constructor?
     # Remember: in python, all constructors have the same name (__init__)
     def __init__(self,computer):
-        self.price = computer.price
+        pass
    
-    def add_computer(self, computer):
-        self.inventory.append(inventory)
-
-print(inventory)
-
-
-
+    def buy(self, computer):
+         self.inventory.append(computer.description,computer.processor_type,computer.hard_drive_capacity, computer.memory,computer.operating_system, computer.year_made, computer.price )
+         print(self.inventory)
     #  - selling a computer (remove from inventory)
-
+    
     #  - buying a computer (add to inventory)
+    def update_price(self,computer, price):
+        pass
 
-    #  - refurbishing a computer
+
 
     #  - updating a computer's price after refurbishment 
-    
-
