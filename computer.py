@@ -1,4 +1,4 @@
-class Computer():
+class Computer:
 
     # What attributes will it need?
     description: str
@@ -18,22 +18,24 @@ class Computer():
         self.year_made = year_made
         self.price = price
 
-computer = Computer()
-print("-" * 21)
-print("COMPUTER RESALE STORE")
-print("-" * 21)
-# print("Buying", computer.description,computer.processor_type,computer.hard_drive_capacity, computer.memory,computer.operating_system, computer.year_made, computer.price )
-print("Adding to Inventory...")
-print("Done.")
-print ("Checking Inventory......")
+
+
+
+    def update_price(self, new_price):
+        self.price = new_price
+
+    def update_os(self,new_os):
+        self.operating_system = new_os 
+
+
+
+
+
+
+
+
 
  
-# def main():
-#     comp_1 = Computer("2019 MacBook Pro", "Intel", "256", "16", "High Sierra", "2019" "1000")
-#     comp_2 = Computer( "Mac Pro (Late 2013)", "Intel","1024", "64", "MacOS Big Sur", "2013","1500")
-#     print("hello")
 
-# if __name__ == "__main__": main()
+#    
 
-# def buy(self, computer)
-    
