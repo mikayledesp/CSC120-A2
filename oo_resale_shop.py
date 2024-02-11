@@ -16,18 +16,19 @@ class ResaleShop:
     #  - selling a computer (remove from inventory)
     def sell(self, computer):
         # if computer in inventory\
-        print("Selling : " + computer.description,computer.processor_type, computer.hard_drive_capacity, computer.memory, computer.operating_system, computer.year_made, computer.price)
+        print("Selling : " + computer.description,computer.processor_type, computer.hard_drive_capacity,"macOS Big Sur", computer.memory, computer.year_made, computer.price)
         if len(self.inventory) > 0:
             self.inventory.remove(computer)
+        else: 
         # if no comomputer in inventory
-        if len(self.inventory) == 0:
-            print("Error: There is no computer to sell. Inventory is empty")
+            print("Sale has been completed!")
     
 
     def print_inventory(self):
         if len(self.inventory) > 0:
             for computer in self.inventory:
                 print(computer.description, computer.processor_type, computer.hard_drive_capacity, computer.memory, computer.operating_system, computer.year_made, computer.price)
+        
 
     def refurbish(self, new_os:Optional[str] = None):
 
@@ -62,7 +63,7 @@ def main():
     print("-" * 21)
     print("COMPUTER RESALE STORE")
     print("-" * 21)
-    comp_1 = Computer("2019 MacBook Pro", "Intel", 256, 16, "High Sierra", 2016 ,1000)
+    comp_1 = Computer("2016 MacBook Pro", "Intel", 256, 16, "High Sierra", 2016 ,1000)
 #    buy comp
     resalestore.buy(comp_1)
     # add to list
@@ -79,6 +80,11 @@ def main():
     print("Done.\n")
     resalestore.sell(comp_1)
     print("\n")
+    resalestore.sell(comp_1)
+    print("Inventory Closed.")
+    print("\n")
+
+
 
 
 if __name__ == "__main__": 
